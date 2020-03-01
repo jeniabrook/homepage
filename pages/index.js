@@ -11,7 +11,7 @@ const Home = () => (
       <h1 className="title">Jenia Brook</h1>
 
       <p className="description">
-        I 💜 <code>Javascript</code>
+        <code>Javascript dev</code>
       </p>
 
       <div className="grid">
