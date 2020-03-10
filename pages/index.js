@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { AiOutlineGithub, AiOutlineTwitter } from "react-icons/ai";
 
 const Home = () => (
   <div className="container">
@@ -10,32 +11,17 @@ const Home = () => (
     <main>
       <h1 className="title">Jenia Brook</h1>
 
-      <p className="description">
-        <code>Javascript dev</code>
-      </p>
-
+      <p className="description">javascript dev</p>
       <div className="grid">
         <a href="https://github.com/JeniaBR" className="card">
-          <h3>Github</h3>
-          <code>checkout</code>
+          <AiOutlineGithub style={{ width: 70, height: 70 }} />
         </a>
 
         <a href="https://twitter.com/jeniabrook" className="card">
-          <h3>Twitter</h3>
-          <code>follow</code>
+          <AiOutlineTwitter style={{ width: 70, height: 70 }} />
         </a>
       </div>
     </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
 
     <style jsx>{`
       .container {
@@ -56,41 +42,6 @@ const Home = () => (
         align-items: center;
       }
 
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
       .title {
         margin: 0;
         line-height: 1.15;
@@ -107,29 +58,18 @@ const Home = () => (
         font-size: 1.5rem;
       }
 
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
       .grid {
         display: flex;
         max-width: 800px;
         margin-top: 3rem;
+        justify-content: center;
       }
 
       .card {
-        margin: 1rem;
-        width: 160px;
-        padding: 1.5rem;
+        margin: 1.5rem;
+        padding: 1rem;
         text-align: center;
-        color: inherit;
         text-decoration: none;
-        border: 1px solid #eaeaea;
         border-radius: 10px;
         transition: color 0.15s ease, border-color 0.15s ease;
       }
@@ -137,8 +77,8 @@ const Home = () => (
       .card:hover,
       .card:focus,
       .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
+        color: #81a1c1;
+        border-color: #81a1c1;
       }
 
       .card h3 {
@@ -155,8 +95,6 @@ const Home = () => (
       @media (max-width: 600px) {
         .grid {
           width: 100%;
-          align-items: center;
-          flex-direction: column;
         }
       }
     `}</style>
