@@ -8,9 +8,13 @@
     "serve": "next start"
   },
   "dependencies": {
+    "@emotion/react": "11.1.4",
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "4.1.0"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "11.1.2"
   }
 }
