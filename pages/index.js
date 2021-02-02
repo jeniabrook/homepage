@@ -1,5 +1,5 @@
-import Head from "next/head";
-import { AiOutlineGithub, AiOutlineTwitter } from "react-icons/ai";
+import Head from 'next/head';
+import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 
 const Home = () => (
   <div className="container">
