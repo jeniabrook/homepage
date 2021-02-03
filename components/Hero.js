@@ -2,9 +2,7 @@ import { css, keyframes } from '@emotion/react';
 import { typography } from '../styles/theme';
 
 const blink = keyframes`
-  0% { opacity: 1.0; }
   50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
 `;
 
 const heroCss = css`
