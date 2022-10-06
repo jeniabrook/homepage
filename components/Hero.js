@@ -52,7 +52,7 @@ function Hero() {
   return (
     <section css={heroCss}>
       <div css={introductionCss}>I'm Jenia Brook.</div>
-      <h1 css={headingTitleCss}>Front-end engineer.</h1>
+      <h1 css={headingTitleCss}>Frontend engineer.</h1>
     </section>
   );
 }
