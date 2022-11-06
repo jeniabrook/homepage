@@ -16,16 +16,19 @@ const containerCss = css`
   align-items: center;
 `;
 
+const imageCss = css`
+  border-radius: 50%;
+`;
+
 function Intro() {
   return (
     <section css={introCss}>
       <Container css={containerCss}>
         <Image
-          css={css`
-            border-radius: 50%;
-          `}
+          css={imageCss}
           src={profilePic}
-          alt="Picture of the author"
+          alt="Picture of Jenia Brook"
+          placeholder="blur"
           width={128}
           height={128}
         />
