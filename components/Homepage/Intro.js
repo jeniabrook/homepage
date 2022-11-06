@@ -46,7 +46,7 @@ function Intro() {
           width={128}
           height={128}
         />
-        <Heading as="h1">Bolby Doe</Heading>
+        <Heading as="h1">Jenia Brook</Heading>
         <Text css={promptCss} size="lg">
           I'm a Frontend engineer
         </Text>
