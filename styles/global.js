@@ -2,12 +2,9 @@ import { css } from '@emotion/react';
 
 import { colors, typography } from './helpers';
 
-import { fontFacesCss } from './fontFaces';
 import tokens from './tokens';
 
 export const globalCss = css`
-  ${fontFacesCss}
-
   /**
    * Box model like it should be:
    * http://www.paulirish.com/2012/box-sizing-border-box-ftw/

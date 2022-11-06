@@ -1,6 +1,5 @@
 export const typography = {
-  fontPrimary: 'Montserrat, system-ui, Arial, sans-serif',
-  fontSerif: 'Playfair Display, Montserrat, system-ui, Arial, sans-serif',
+  fontPrimary: 'Rubik, system-ui, Arial, sans-serif',
 };
 
 export const colors = {
