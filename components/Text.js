@@ -4,7 +4,7 @@ const textCss = props => css`
   margin-top: 0;
   font-size: 1rem;
   margin-bottom: 1rem;
-  font-variation-settings: 'wght' 300;
+  font-variation-settings: 'wght' 350;
 
   ${props.isFlushMargin &&
   css`

@@ -9,22 +9,22 @@ const headingCss = css`
 const headingStyle = {
   h1: css`
     font-size: 2.25rem;
-    font-variation-settings: 'wght' 600;
+    font-variation-settings: 'wght' 480;
     margin-bottom: 0.875rem;
   `,
   h2: css`
     font-size: 2.25rem;
-    font-variation-settings: 'wght' 600;
+    font-variation-settings: 'wght' 480;
     margin-bottom: 0.5rem;
   `,
   h3: css`
     font-size: 1.25rem;
-    font-variation-settings: 'wght' 600;
+    font-variation-settings: 'wght' 480;
     margin-block: 0.625rem;
   `,
   h4: css`
     font-size: 1rem;
-    font-variation-settings: 'wght' 500;
+    font-variation-settings: 'wght' 400;
     margin-block: 1rem;
   `,
 };
