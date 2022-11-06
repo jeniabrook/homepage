@@ -1,7 +1,11 @@
-import Hero from '../components/Hero';
+import Intro from '../components/Homepage/Intro';
 
 function Index() {
-  return <Hero />;
+  return (
+    <main>
+      <Intro />
+    </main>
+  );
 }
 
 export default Index;

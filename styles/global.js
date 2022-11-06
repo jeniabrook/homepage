@@ -1,10 +1,9 @@
 import { css } from '@emotion/react';
 
-import { typography } from './theme';
+import { colors, typography } from './helpers';
 
 import { fontFacesCss } from './fontFaces';
-
-const browserBaseFontSize = 16;
+import tokens from './tokens';
 
 export const globalCss = css`
   ${fontFacesCss}
@@ -50,32 +49,20 @@ export const globalCss = css`
     resize: none;
   }
 
-  /**
-   * Font sizing strategy making 1rem equal 10px for easy usage
-   * e.g. 1.6rem = 16px
-   */
   :root {
-    /* e.g. (10 / 16) * 100 = 62.5% */
-    font-size: ${(typography.rootFontSize / browserBaseFontSize) * 100}%;
+    ${tokens}
   }
 
   /**
    * Default font settings for all generic text
    */
   body {
+    color: ${colors.grayDark};
+    background-color: ${colors.light};
     font-family: ${typography.fontPrimary};
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: 300;
     /* Prevent scroll-bar from showing when positioning elements outside (to the page's right) */
     overflow-x: hidden;
-    color: #3a3a3a;
-  }
-
-  /**
-   * Fix default input font styles not taken from body styles
-   */
-  input {
-    font-size: inherit;
-    font-weight: inherit;
   }
 `;

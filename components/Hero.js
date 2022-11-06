@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/react';
-import { typography } from '../styles/theme';
+import { typography } from '../styles/helpers';
 
 const blink = keyframes`
   50% { opacity: 0.0; }
