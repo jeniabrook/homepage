@@ -1,11 +1,8 @@
 import { css } from '@emotion/react';
-import { Rubik } from '@next/font/google';
 
-import { colors } from './helpers';
+import { colors, typography } from './helpers';
 
 import tokens from './tokens';
-
-const rubik = Rubik();
 
 export const globalCss = css`
   /**
@@ -59,7 +56,7 @@ export const globalCss = css`
   body {
     color: ${colors.grayDark};
     background-color: ${colors.light};
-    font-family: ${rubik.style.fontFamily};
+    font-family: ${typography.fontPrimary};
     font-size: 16px;
     font-weight: 400;
     /* Prevent scroll-bar from showing when positioning elements outside (to the page's right) */
