@@ -1,7 +1,13 @@
 import Image from 'next/image';
-import { css } from '@emotion/react';
+import { css, keyframes } from '@emotion/react';
 import Container from '../Container';
 import profilePic from '../../public/me.jpg';
+import Heading from '../Heading';
+import Text from '../Text';
+
+const blink = keyframes`
+  50% { opacity: 0.0; }
+`;
 
 const introCss = css`
   min-height: 100vh;
@@ -18,6 +24,14 @@ const containerCss = css`
 
 const imageCss = css`
   border-radius: 50%;
+  margin-bottom: 1.5rem;
+`;
+
+const promptCss = css`
+  ::after {
+    content: ' |';
+    animation: ${blink} 1s ease infinite;
+  }
 `;
 
 function Intro() {
@@ -32,8 +46,10 @@ function Intro() {
           width={128}
           height={128}
         />
-        <h1>Jenia Brook</h1>
-        <p>I'm a Frontend engineer</p>
+        <Heading as="h1">Jenia Brook</Heading>
+        <Text css={promptCss} size="lg">
+          I'm a Frontend engineer
+        </Text>
       </Container>
     </section>
   );
