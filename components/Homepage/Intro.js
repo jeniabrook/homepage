@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import { css, keyframes } from '@emotion/react';
 import Container from '../Container';
-import profilePic from '../../public/me.jpg';
 import Heading from '../Heading';
 import Text from '../Text';
+import ChevronRight from './ChevronRight';
+import profilePic from '../../public/me.jpg';
+import { colors } from '../../styles/helpers';
 
 const blink = keyframes`
   50% { opacity: 0.0; }
@@ -28,8 +30,19 @@ const imageCss = css`
 `;
 
 const promptCss = css`
+  display: flex;
+  align-items: center;
+
+  > svg {
+    stroke: ${colors.pink};
+    stroke-width: 3;
+  }
+
   ::after {
-    content: ' |';
+    content: '|';
+    font-variation-settings: 'wght' 400;
+    margin-inline-start: 0.25rem;
+    color: ${colors.pink};
     animation: ${blink} 1s ease infinite;
   }
 `;
@@ -48,7 +61,7 @@ function Intro() {
         />
         <Heading as="h1">Jenia Brook</Heading>
         <Text css={promptCss} size="lg">
-          I'm a Frontend engineer
+          <ChevronRight /> I'm a Frontend engineer
         </Text>
       </Container>
     </section>
