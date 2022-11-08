@@ -1,13 +1,15 @@
 import { Global } from '@emotion/react';
-
 import { globalCss } from '../styles/global';
-import { Fragment } from 'react';
+
+import localFont from '@next/font/local';
+
+const rubikFont = localFont({ src: '../public/font/Rubik.woff2' });
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <Fragment>
+    <main className={rubikFont.className}>
       <Global styles={globalCss} />
       <Component {...pageProps} />
-    </Fragment>
+    </main>
   );
 }

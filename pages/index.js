@@ -1,7 +1,15 @@
-import Hero from '../components/Hero';
+import Head from 'next/head';
+import Intro from '../components/Homepage/Intro';
 
 function Index() {
-  return <Hero />;
+  return (
+    <>
+      <Head>
+        <title>Jenia Brook | Frontend engineer</title>
+      </Head>
+      <Intro />
+    </>
+  );
 }
 
 export default Index;
