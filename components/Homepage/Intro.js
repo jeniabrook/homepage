@@ -14,8 +14,9 @@ const blink = keyframes`
 
 const introCss = css`
   position: relative;
-  min-height: -webkit-fill-available;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: -moz-available;
   height: 100vh;
 `;
 
