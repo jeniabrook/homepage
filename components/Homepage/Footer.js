@@ -32,10 +32,12 @@ const githubTextCss = css`
   display: flex;
   align-items: center;
   font-style: italic;
-  column-gap: 8px;
+  column-gap: 4px;
 
-  > a > svg {
-    display: block;
+  > a {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
   }
 `;
 
@@ -44,7 +46,7 @@ function Footer() {
     <footer css={footerCss}>
       <Container css={containerCss}>
         <Text css={thanksTextCss} isFlushMargin>
-          Thank you for scrolling all this way. <Heart />
+          Thank you for scrolling all this way <Heart />
         </Text>
         <Text css={githubTextCss} isFlushMargin>
           Code available on
@@ -53,6 +55,7 @@ function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
+            GitHub
             <GitHub />
           </a>
         </Text>
