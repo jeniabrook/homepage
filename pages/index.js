@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import AboutMe from '../components/Homepage/AbotMe';
+import Footer from '../components/Homepage/Footer';
 import Intro from '../components/Homepage/Intro';
 
 function Index() {
@@ -28,6 +29,7 @@ function Index() {
       </Head>
       <Intro />
       <AboutMe />
+      <Footer />
     </>
   );
 }

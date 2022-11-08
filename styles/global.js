@@ -32,7 +32,7 @@ export const globalCss = css`
 
   a {
     text-decoration: none;
-    color: hotpink;
+    color: ${colors.salmon};
   }
 
   ul,
