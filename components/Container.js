@@ -12,7 +12,7 @@ const containerCss = css`
   ${mediaQuery.md} {
     max-width: 920px;
   }
-  ${mediaQuery.lg} {
+  ${mediaQuery.xl} {
     max-width: 1200px;
   }
 `;
