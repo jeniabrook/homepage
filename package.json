@@ -5,7 +5,8 @@
   "scripts": {
     "start": "next",
     "build": "next build",
-    "serve": "next start"
+    "serve": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "11.10.5",
@@ -13,5 +14,9 @@
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.2"
   }
 }
