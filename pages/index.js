@@ -5,7 +5,7 @@ function Index() {
   return (
     <>
       <Head>
-        <title>Jenia Brook | Frontend engineer</title>
+        <title>Jenia Brook | Frontend Engineer</title>
       </Head>
       <Intro />
     </>
