@@ -16,6 +16,11 @@ const introCss = css`
   position: relative;
   min-height: 100vh;
   height: 100vh;
+
+  @supports (min-height: 100dvh) or (height: 100dvh) {
+    min-height: 100dvh;
+    height: 100dvh;
+  }
 `;
 
 const containerCss = css`
