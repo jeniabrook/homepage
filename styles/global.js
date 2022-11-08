@@ -11,7 +11,6 @@ export const globalCss = css`
    */
   html {
     box-sizing: border-box;
-    height: 100%;
   }
 
   *,
@@ -27,7 +26,6 @@ export const globalCss = css`
   body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-weight: 300;
     letter-spacing: 0.2px;
   }
