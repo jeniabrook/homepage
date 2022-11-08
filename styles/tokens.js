@@ -7,8 +7,10 @@ export default css`
   --gray-dark: #5e5c7f;
   --indigo: #6c6ce5;
   --light: #f9f9ff;
+  --orange: #fd7e14;
   --pink: #f97b8b;
   --salmon: #ff4c60;
+  --teal: #20c997;
   --white: #fff;
   --yellow: #f9d74c;
 

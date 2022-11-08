@@ -3,15 +3,17 @@ import { css, keyframes } from '@emotion/react';
 import Container from '../Container';
 import Heading from '../Heading';
 import Text from '../Text';
-import ChevronRight from './ChevronRight';
+import ChevronRight from './icons/ChevronRight';
 import profilePic from '../../public/me.jpg';
 import { colors } from '../../styles/helpers';
+import IconsLayout from './IconsLayout';
 
 const blink = keyframes`
   50% { opacity: 0.0; }
 `;
 
 const introCss = css`
+  position: relative;
   min-height: 100vh;
   height: 100vh;
 `;
@@ -50,6 +52,7 @@ const promptCss = css`
 function Intro() {
   return (
     <section css={introCss}>
+      <IconsLayout />
       <Container css={containerCss}>
         <Image
           css={imageCss}

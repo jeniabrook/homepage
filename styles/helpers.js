@@ -8,8 +8,10 @@ export const colors = {
   grayDark: 'var(--gray-dark)',
   indigo: 'var(--indigo)',
   light: 'var(--light)',
+  orange: 'var(--orange)',
   pink: 'var(--pink)',
   salmon: 'var(--salmon)',
+  teal: 'var(--teal)',
   white: 'var(--white)',
   yellow: 'var(--yellow)',
 };
