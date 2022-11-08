@@ -64,7 +64,7 @@ function Intro() {
         />
         <Heading as="h1">Jenia Brook</Heading>
         <Text css={promptCss} size="lg">
-          <ChevronRight /> I'm a Frontend engineer
+          <ChevronRight /> I'm a Frontend Engineer
         </Text>
       </Container>
     </section>
