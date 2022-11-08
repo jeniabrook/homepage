@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { colors } from '../../styles/helpers';
+import { colors, mediaQuery } from '../../styles/helpers';
 import Container from '../Container';
 import Text from '../Text';
 import GitHub from './icons/GitHub';
@@ -11,9 +11,14 @@ const footerCss = css`
 
 const containerCss = css`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 8px;
+
+  ${mediaQuery.md} {
+    flex-direction: row;
+  }
 `;
 
 const thanksTextCss = css`
