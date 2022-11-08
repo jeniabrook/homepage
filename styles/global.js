@@ -11,6 +11,7 @@ export const globalCss = css`
    */
   html {
     box-sizing: border-box;
+    height: --webkit-fill-available;
   }
 
   *,
@@ -28,6 +29,7 @@ export const globalCss = css`
     padding: 0;
     font-weight: 300;
     letter-spacing: 0.2px;
+    height: --webkit-fill-available;
   }
 
   a {
