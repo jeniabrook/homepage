@@ -1,5 +1,5 @@
-import Container from '../../Container';
-import SectionHeading from '../../SectionHeading';
+import Container from '../../../Container';
+import SectionHeading from '../../../SectionHeading';
 
 function TechStack() {
   return (

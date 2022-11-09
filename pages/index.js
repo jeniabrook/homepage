@@ -2,7 +2,7 @@ import Head from 'next/head';
 import AboutMe from '../components/Pages/Home/AboutMe';
 import Footer from '../components/Pages/Home/Footer';
 import Intro from '../components/Pages/Home/Intro';
-import TechStack from '../components/Pages/Home/TechStack';
+import TechStack from '../components/Pages/Home/TechStack/TechStack';
 
 function Index() {
   return (
