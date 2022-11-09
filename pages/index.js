@@ -2,6 +2,7 @@ import Head from 'next/head';
 import AboutMe from '../components/Pages/Home/AboutMe';
 import Footer from '../components/Pages/Home/Footer';
 import Intro from '../components/Pages/Home/Intro';
+import TechStack from '../components/Pages/Home/TechStack';
 
 function Index() {
   return (
@@ -29,6 +30,7 @@ function Index() {
       </Head>
       <Intro />
       <AboutMe />
+      <TechStack />
       <Footer />
     </>
   );
