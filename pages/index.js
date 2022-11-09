@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import AboutMe from '../components/Homepage/AbotMe';
+import Footer from '../components/Homepage/Footer';
 import Intro from '../components/Homepage/Intro';
 
 function Index() {
@@ -26,6 +28,8 @@ function Index() {
         <link rel="manifest" href="/favicons/site.webmanifest" />
       </Head>
       <Intro />
+      <AboutMe />
+      <Footer />
     </>
   );
 }

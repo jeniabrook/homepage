@@ -13,9 +13,9 @@ const headingStyle = {
     margin-bottom: 0.875rem;
   `,
   h2: css`
-    font-size: 2.25rem;
+    font-size: 1.875rem;
     font-variation-settings: 'wght' 480;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
   `,
   h3: css`
     font-size: 1.25rem;
@@ -29,11 +29,14 @@ const headingStyle = {
   `,
 };
 
-function Heading({ as: component, children }) {
+function Heading({ as: component, children, className }) {
   const Component = component ?? 'h1';
 
   return (
-    <Component css={[headingCss, headingStyle[component]]}>
+    <Component
+      css={[headingCss, headingStyle[component]]}
+      className={className}
+    >
       {children}
     </Component>
   );
