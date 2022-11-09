@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { colors } from '../styles/helpers';
 import Heading from './Heading';
-import ChevronRight from './Homepage/icons/ChevronRight';
+import ChevronRight from './Icons/ChevronRight';
 
 const sectionHeadingCss = css`
   display: flex;
