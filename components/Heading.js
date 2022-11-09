@@ -15,7 +15,7 @@ const headingStyle = {
   h2: css`
     font-size: 1.875rem;
     font-variation-settings: 'wght' 480;
-    margin-bottom: 3.75rem;
+    margin-bottom: 1.5rem;
   `,
   h3: css`
     font-size: 1.25rem;

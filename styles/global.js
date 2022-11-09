@@ -11,6 +11,8 @@ export const globalCss = css`
    */
   html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   *,
@@ -24,10 +26,15 @@ export const globalCss = css`
    */
   html,
   body {
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
     letter-spacing: 0.2px;
+    color: ${colors.grayDark};
+    background-color: ${colors.light};
+    font-family: ${typography.fontPrimary};
+    font-size: 16px;
+    font-weight: 400;
+    /* Prevent scroll-bar from showing when positioning elements outside (to the page's right) */
+    overflow-x: hidden;
+    line-height: 1.7;
   }
 
   a {
@@ -48,18 +55,5 @@ export const globalCss = css`
 
   :root {
     ${tokens}
-  }
-
-  /**
-   * Default font settings for all generic text
-   */
-  body {
-    color: ${colors.grayDark};
-    background-color: ${colors.light};
-    font-family: ${typography.fontPrimary};
-    font-size: 16px;
-    font-weight: 400;
-    /* Prevent scroll-bar from showing when positioning elements outside (to the page's right) */
-    overflow-x: hidden;
   }
 `;
