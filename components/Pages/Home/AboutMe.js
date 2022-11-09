@@ -1,7 +1,7 @@
-import Card from '../Card';
-import Container from '../Container';
-import SectionHeading from '../SectionHeading';
-import Text from '../Text';
+import Card from '../../Card';
+import Container from '../../Container';
+import SectionHeading from '../../SectionHeading';
+import Text from '../../Text';
 
 function AboutMe() {
   return (

@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import AboutMe from '../components/Homepage/AbotMe';
-import Footer from '../components/Homepage/Footer';
-import Intro from '../components/Homepage/Intro';
+import AboutMe from '../components/Pages/Home/AboutMe';
+import Footer from '../components/Pages/Home/Footer';
+import Intro from '../components/Pages/Home/Intro';
 
 function Index() {
   return (

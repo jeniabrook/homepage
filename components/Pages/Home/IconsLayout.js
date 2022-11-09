@@ -1,11 +1,11 @@
 import { css } from '@emotion/react';
-import { colors, mediaQuery } from '../../styles/helpers';
-import AtSign from '../Icons/AtSign';
-import Code from '../Icons/Code';
-import Command from '../Icons/Command';
-import Crop from '../Icons/Crop';
-import Hash from '../Icons/Hash';
-import Zap from '../Icons/Zap';
+import { colors, mediaQuery } from '../../../styles/helpers';
+import AtSign from '../../Icons/AtSign';
+import Code from '../../Icons/Code';
+import Command from '../../Icons/Command';
+import Crop from '../../Icons/Crop';
+import Hash from '../../Icons/Hash';
+import Zap from '../../Icons/Zap';
 
 const iconCss = css`
   position: absolute;
