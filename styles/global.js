@@ -21,10 +21,6 @@ export const globalCss = css`
     box-sizing: inherit;
   }
 
-  /**
-   * Reset
-   */
-  html,
   body {
     letter-spacing: 0.2px;
     color: ${colors.grayDark};

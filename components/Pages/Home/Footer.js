@@ -1,9 +1,9 @@
 import { css } from '@emotion/react';
-import { colors, mediaQuery } from '../../styles/helpers';
-import Container from '../Container';
-import Text from '../Text';
-import GitHub from './icons/GitHub';
-import Heart from './icons/Heart';
+import { colors, mediaQuery } from '../../../styles/helpers';
+import Container from '../../Container';
+import Text from '../../Text';
+import GitHub from '../../Icons/GitHub';
+import Heart from '../../Icons/Heart';
 
 const footerCss = css`
   padding-block: 20px;
