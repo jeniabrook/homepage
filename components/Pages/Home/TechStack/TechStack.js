@@ -15,6 +15,7 @@ import Node from './Logos/Node';
 import TanStackQuery from './Logos/TanStackQuery';
 import GraphQl from './Logos/GraphQl';
 import Git from './Logos/Git';
+import { mediaQuery } from '../../../../styles/helpers';
 
 const technologies = [
   [JavaScript, 'JavaScript'],
@@ -34,8 +35,12 @@ const technologies = [
 
 const techStackGridCss = css`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 30px;
+
+  ${mediaQuery.md} {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 `;
 
 const logoWrapperCss = css`
@@ -47,6 +52,11 @@ const logoWrapperCss = css`
 
 const labelCss = css`
   text-align: center;
+  font-size: 0.9rem;
+
+  ${mediaQuery.md} {
+    font-size: 1rem;
+  }
 `;
 
 function TechStack() {
