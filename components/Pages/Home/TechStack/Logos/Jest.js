@@ -5,7 +5,7 @@ function Jest() {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 79.688 85"
       fill="#fff"
-      fill-rule="evenodd"
+      fillRule="evenodd"
       stroke="#000"
       strokeLinecap="round"
       strokeLinejoin="round"
