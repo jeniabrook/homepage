@@ -32,6 +32,15 @@ const accentColorCss = {
       color: ${colors.orange};
     }
   `,
+  teal: css`
+    > svg {
+      stroke: ${colors.teal};
+    }
+
+    > span {
+      color: ${colors.teal};
+    }
+  `,
 };
 
 function SectionHeading({ accentColor, children }) {
