@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import AboutMe from '../components/Pages/Home/AboutMe';
-import Experience from '../components/Pages/Home/Experience';
+import Experience from '../components/Pages/Home/Experience/Experience';
 import Footer from '../components/Pages/Home/Footer';
 import Intro from '../components/Pages/Home/Intro';
 import TechStack from '../components/Pages/Home/TechStack/TechStack';

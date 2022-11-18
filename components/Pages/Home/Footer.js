@@ -2,7 +2,6 @@ import { css } from '@emotion/react';
 import { colors, mediaQuery } from '../../../styles/helpers';
 import Container from '../../Container';
 import Text from '../../Text';
-import GitHub from '../../Icons/GitHub';
 import Heart from '../../Icons/Heart';
 
 const footerCss = css`
@@ -61,7 +60,6 @@ function Footer() {
             target="_blank"
           >
             GitHub
-            <GitHub />
           </a>
         </Text>
       </Container>
