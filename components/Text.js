@@ -10,12 +10,19 @@ const textCss = props => css`
   css`
     margin-bottom: 0;
   `}
-
-  ${props.size === 'lg' &&
-  css`
-    font-size: 1.125rem;
-  `}
 `;
+
+const textSize = {
+  sm: css`
+    font-size: 0.875rem;
+  `,
+  md: css`
+    font-size: 1rem;
+  `,
+  lg: css`
+    font-size: 1.125rem;
+  `,
+};
 
 function Text({
   as: component,
@@ -27,7 +34,10 @@ function Text({
   const Component = component ?? 'p';
 
   return (
-    <Component css={textCss({ isFlushMargin, size })} className={className}>
+    <Component
+      css={[textCss({ isFlushMargin }), textSize[size]]}
+      className={className}
+    >
       {children}
     </Component>
   );

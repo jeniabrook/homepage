@@ -20,12 +20,12 @@ const headingStyle = {
   h3: css`
     font-size: 1.25rem;
     font-variation-settings: 'wght' 480;
-    margin-block: 0.625rem;
+    margin-block: 0;
   `,
   h4: css`
     font-size: 1rem;
     font-variation-settings: 'wght' 400;
-    margin-block: 1rem;
+    margin-block: 0;
   `,
 };
 
