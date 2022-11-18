@@ -27,18 +27,29 @@ function Experience() {
         <Work>
           <Title companyName="Flare" timeRange="Nov 2022 - Present" />
           <Text isFlushMargin>
-            Building polished, performant, and highly tested web apps using
-            modern JavaScript frameworks.
+            Reimagining how clients and attorneys work together, make legal
+            services accessible to those who otherwise wouldn&apos;t be able to
+            afford it. Building polished, performant, and highly tested web apps
+            using cutting-edge web technologies.
           </Text>
         </Work>
         <Work>
           <Title companyName="Healthy.io" timeRange="Dec 2018 - Nov 2022" />
+          <Text>
+            Developed multiple web applications and websites using modern
+            JavaScript tooling for a fast growing company that successfully
+            turned a smartphone into a clinical-grade medical device.
+          </Text>
         </Work>
         <Work>
           <Title
             companyName="Headstart.co.il"
             timeRange="Oct 2017 - Dec 2018"
           />
+          <Text isFlushMargin>
+            Built the next generation platform for the first & leading
+            crowdfunding group in Israel.
+          </Text>
         </Work>
       </Container>
     </section>
