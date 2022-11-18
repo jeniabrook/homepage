@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { colors } from '../../../../styles/helpers';
+import { colors, mediaQuery } from '../../../../styles/helpers';
 import Card from '../../../Card';
 import Briefcase from '../../../Icons/Briefcase';
 
@@ -14,6 +14,7 @@ const workExperienceCss = css`
   }
 
   :not(:last-of-type)::before {
+    display: none;
     position: absolute;
     content: ' ';
     width: 1px;
@@ -21,10 +22,15 @@ const workExperienceCss = css`
     background-color: ${colors.pink};
     top: 38px;
     left: 19px;
+
+    ${mediaQuery.md} {
+      display: initial;
+    }
   }
 `;
 
 const iconWrapperCss = css`
+  display: none;
   padding: 6px;
   border: 1px solid ${colors.pink};
   border-radius: 50%;
@@ -32,6 +38,10 @@ const iconWrapperCss = css`
   > svg {
     display: block;
     stroke: ${colors.pink};
+  }
+
+  ${mediaQuery.md} {
+    display: initial;
   }
 `;
 
