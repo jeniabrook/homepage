@@ -31,11 +31,6 @@ const containerCss = css`
   align-items: center;
 `;
 
-const imageCss = css`
-  border-radius: 50%;
-  margin-bottom: 1.5rem;
-`;
-
 const promptCss = css`
   display: flex;
   align-items: center;
@@ -60,7 +55,7 @@ function Intro() {
       <IconsLayout />
       <Container css={containerCss}>
         <Image
-          css={imageCss}
+          className="rounded-full mb-6"
           src={profilePic}
           alt="Picture of Jenia Brook"
           placeholder="blur"

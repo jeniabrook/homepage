@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-light text-gray-dark text-base font-normal leading-7;
+  }
+
+  a {
+    @apply text-pink;
+  }
+}

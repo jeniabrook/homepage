@@ -1,21 +1,8 @@
-import { css } from '@emotion/react';
-import { colors } from '../../../../styles/helpers';
 import Container from '../../../Container';
 import SectionHeading from '../../../SectionHeading';
 import Text from '../../../Text';
 import Title from './Title';
 import Work from './Work';
-
-const titleCss = css`
-  display: flex;
-  align-items: baseline;
-  column-gap: 12px;
-  margin-bottom: 8px;
-
-  > p {
-    color: ${colors.gray};
-  }
-`;
 
 function Experience() {
   return (
@@ -41,7 +28,7 @@ function Experience() {
             turned a smartphone into a clinical-grade medical device.
           </Text>
         </Work>
-        <Work>
+        <Work lastItem>
           <Title
             companyName="Headstart.co.il"
             timeRange="Oct 2017 - Dec 2018"

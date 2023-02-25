@@ -8,7 +8,7 @@ function NextJs() {
     >
       <mask
         id="mask0_408_134"
-        style={{ 'mask-type': 'alpha' }}
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
