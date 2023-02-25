@@ -1,16 +1,8 @@
-import { css } from '@emotion/react';
-import { colors } from '../styles/helpers';
+import clsx from 'clsx';
 
-const cardCss = css`
-  padding: 1.875rem;
-  background-color: ${colors.white};
-  border-radius: 20px;
-  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
-`;
-
-function Card({ children, className, color }) {
+function Card({ children, className }) {
   return (
-    <div css={cardCss} className={className}>
+    <div className={clsx('p-7 bg-white rounded-2xl shadow-lg', className)}>
       {children}
     </div>
   );
