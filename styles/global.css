@@ -11,3 +11,15 @@
     @apply text-pink;
   }
 }
+
+@layer utilities {
+  .font-normal {
+    font-variation-settings: 'wght' 350;
+  }
+  .font-medium {
+    font-variation-settings: 'wght' 450;
+  }
+  .font-semibold {
+    font-variation-settings: 'wght' 480;
+  }
+}

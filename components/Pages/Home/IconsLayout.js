@@ -1,5 +1,4 @@
-import { css } from '@emotion/react';
-import { colors, mediaQuery } from '../../../styles/helpers';
+import clsx from 'clsx';
 import AtSign from '../../Icons/AtSign';
 import Code from '../../Icons/Code';
 import Command from '../../Icons/Command';
@@ -7,139 +6,66 @@ import Crop from '../../Icons/Crop';
 import Hash from '../../Icons/Hash';
 import Zap from '../../Icons/Zap';
 
-const iconCss = css`
-  position: absolute;
-`;
-
 const icons = [
   {
     id: 1,
     icon: AtSign,
-    style: css`
-      top: 10%;
-      left: 10%;
-      transform: rotate(25deg);
-      stroke: ${colors.indigo};
-    `,
+    style: 'top-[10%] left-[10%] rotate-[25deg] stroke-indigo',
   },
   {
     id: 2,
     icon: Code,
-    style: css`
-      left: 25%;
-      top: 30%;
-      transform: rotate(-25deg);
-      stroke: ${colors.pink};
-    `,
+    style: 'top-[25%] left-[30%] rotate-[-25deg] stroke-pink',
   },
   {
     id: 3,
     icon: Command,
-    style: css`
-      left: 15%;
-      bottom: 30%;
-      transform: rotate(25deg);
-      stroke: ${colors.teal};
-      display: none;
-
-      ${mediaQuery.sm} {
-        display: initial;
-      }
-    `,
+    style: 'left-[15%] bottom-[30%] rotate-[25deg] stroke-teal hidden sm:block',
   },
   {
     id: 4,
     icon: Crop,
-    style: css`
-      left: 10%;
-      bottom: 10%;
-      stroke: ${colors.salmon};
-    `,
+    style: 'left-[10%] bottom-[10%]  stroke-salmon',
   },
   {
     id: 5,
     icon: Hash,
-    style: css`
-      left: 45%;
-      top: 5%;
-      transform: rotate(5deg);
-      stroke: ${colors.yellow};
-    `,
+    style: 'left-[45%] top-[5%] rotate-[5deg] stroke-yellow',
   },
   {
     id: 6,
     icon: Zap,
-    style: css`
-      left: 40%;
-      bottom: 5%;
-      transform: rotate(-15deg);
-      stroke: ${colors.orange};
-    `,
+    style: 'left-[40%] bottom-[5%] rotate-[-15deg] stroke-orange',
   },
   {
     id: 7,
     icon: AtSign,
-    style: css`
-      top: 20%;
-      right: 30%;
-      transform: rotate(-25deg);
-      stroke: ${colors.salmon};
-    `,
+    style: 'top-[20%] right-[30%] rotate-[-25deg] stroke-salmon',
   },
   {
     id: 8,
     icon: Code,
-    style: css`
-      right: 30%;
-      bottom: 20%;
-      transform: rotate(25deg);
-      stroke: ${colors.pink};
-    `,
+    style: 'right-[30%] bottom-[20%] rotate-[25deg] stroke-pink',
   },
   {
     id: 9,
     icon: Command,
-    style: css`
-      right: 10%;
-      top: 10%;
-      transform: rotate(-25deg);
-      stroke: ${colors.orange};
-    `,
+    style: 'right-[10%] top-[10%] rotate-[-25deg] stroke-orange',
   },
   {
     id: 10,
     icon: Crop,
-    style: css`
-      top: 45%;
-      right: 20%;
-      transform: rotate(90deg);
-      stroke: ${colors.indigo};
-    `,
+    style: 'right-[20%] top-[45%] rotate-[90deg] stroke-indigo',
   },
   {
     id: 11,
     icon: Hash,
-    style: css`
-      bottom: 10%;
-      right: 10%;
-      transform: rotate(-5deg);
-      stroke: ${colors.yellow};
-    `,
+    style: 'right-[10%] bottom-[10%] rotate-[-5deg] stroke-yellow',
   },
   {
     id: 12,
     icon: Zap,
-    style: css`
-      top: 60%;
-      right: 10%;
-      transform: rotate(15deg);
-      stroke: ${colors.teal};
-      display: none;
-
-      ${mediaQuery.sm} {
-        display: initial;
-      }
-    `,
+    style: 'right-[10%] top-[60%] rotate-[15deg] stroke-teal hidden sm:block',
   },
 ];
 
@@ -148,7 +74,7 @@ function IconsLayout() {
     <>
       {icons.map(({ id, icon, style }) => {
         const Icon = icon;
-        return <Icon key={id} css={[iconCss, style]} />;
+        return <Icon key={id} className={clsx('absolute', style)} />;
       })}
     </>
   );

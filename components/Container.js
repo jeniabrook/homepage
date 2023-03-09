@@ -1,25 +1,13 @@
-import { css } from '@emotion/react';
-import { mediaQuery } from '../styles/helpers';
-
-const containerCss = css`
-  width: 100%;
-  padding-inline: 15px;
-  margin: 0 auto;
-
-  ${mediaQuery.sm} {
-    max-width: 540px;
-  }
-  ${mediaQuery.md} {
-    max-width: 920px;
-  }
-  ${mediaQuery.xl} {
-    max-width: 1200px;
-  }
-`;
+import clsx from 'clsx';
 
 function Container({ children, className }) {
   return (
-    <div css={containerCss} className={className}>
+    <div
+      className={clsx(
+        'w-full px-4 my-0 mx-auto sm:max-w-[540px] md:max-w-[920px] xl:max-w-[1200px]',
+        className
+      )}
+    >
       {children}
     </div>
   );
