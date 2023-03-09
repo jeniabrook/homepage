@@ -12,13 +12,14 @@ function AboutMe() {
         </SectionHeading>
         <Card>
           <Text isFlushMargin>
-            I&apos;m a frontend engineer located in Israel. I have a serious
-            passion about cutting-edge, pixel-perfect, beautiful interfaces and
-            intuitively implemented user experience. Well-organized person,
-            autodidact, independent employee with high attention to details.
-            Constantly learning new things, happy to share vast knowledge and
-            love to code. Interested in the entire frontend spectrum and working
-            on ambitious projects with positive people.
+            I am a frontend engineer based in Israel who is deeply passionate
+            about designing and implementing cutting-edge, visually stunning
+            interfaces with intuitive user experiences. I am a highly organized,
+            self-taught, and detail-oriented individual who takes pride in
+            delivering top-quality work. I am constantly expanding my knowledge
+            and skills, and enjoy sharing my expertise with others. I am
+            fascinated by the entire frontend spectrum and relish working on
+            challenging projects with positive, like-minded individuals.
           </Text>
         </Card>
       </Container>
