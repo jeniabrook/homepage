@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>{children}</body>
+      <body className={cn(rubik.className, "min-h-screen flex flex-col")}>
+        {children}
+      </body>
     </html>
   );
 }

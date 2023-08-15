@@ -1,16 +1,9 @@
-import Image from "next/image";
+import { Hero } from "@/components/hero";
 
 export default function Home() {
   return (
-    <main className="container">
-      <Image
-        alt="Picture of Jenia Brook"
-        className="rounded-full"
-        src={"/me.jpg"}
-        width={120}
-        height={120}
-      />
-      <h1>Jenia Brook</h1>
+    <main className="container flex-1">
+      <Hero />
       <p>
         I am a frontend engineer based in Israel who is deeply passionate about
         designing and implementing cutting-edge, visually stunning interfaces
